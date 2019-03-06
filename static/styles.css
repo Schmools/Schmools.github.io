@@ -1,0 +1,141 @@
+#header {
+		
+}
+#body {
+    padding-top: auto;
+    margin-top: -1.5%;
+    margin-left: -10px;
+}
+
+h1 {
+    font-family: p22-underground, sans-serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-top: 0px;
+    width: 20%;
+    text-align: right;
+}
+
+h2 {
+    font-family: p22-underground, sans-serif;
+    font-weight: 1000;
+    font-size: 18px;
+    color: #797979;
+    margin-top: -60px;
+    width: 20%;
+    text-align: right;
+}
+
+header {
+    margin-top: -35px;
+    left: 0px;
+    margin-left: 8px;
+    border: 1px none #000000;
+}
+
+ul {
+    margin-left: 0px;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+
+}
+
+
+
+div {
+    margin-top: 60px;	
+}
+
+
+nav {
+	font-family: p22-underground, sans-serif;
+    font-weight: 50;
+    font-size: 15px;
+    width: 20%;
+    margin-top: 60px;
+    text-align: right;
+}
+
+
+main {
+    float: right;
+    width: 75%;
+    height: auto;
+    clear: none;
+    left: 0%;
+    font-family: ibm-plex-serif, sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+	font-family: p22-underground, sans-serif;
+	font-weight: 100;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #797979;
+}
+#header {
+}
+
+#top {
+	font-weight: 1000;
+	
+}
+#interests {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 12pt;
+}
+#listinterests {
+    margin-top: -2px;
+    font-size: 12pt;
+    padding-top: 0px;
+	list-style-type: disc;
+   	
+}
+#tagline {
+    text-align: left;
+    font-family: p22-underground, sans-serif;
+    font-size: 10pt;
+	color: #797979;
+}
+
+h3 {
+    height: auto;
+    margin-top: 1px;
+    font-size: 16pt;
+}
+
+img {
+    width: 75%;
+    height: 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    clear: none;
+	 	
+}
+
+video {
+    width: 85%;
+    height: 0%;
+    margin-top: 15px;
+}
+
+iframe {
+    margin-top: 15px;
+    margin-bottom: 15px;
+	
+}
+#90 {
+}
