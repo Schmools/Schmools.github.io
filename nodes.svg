@@ -4,16 +4,16 @@
 	 viewBox="0 0 425 363" style="enable-background:new 0 0 425 363;" xml:space="preserve">
 <style type="text/css">
 	.st0{opacity:0.6;fill:#FFFFFF;}
-	.st1{opacity:0.6;fill:none;stroke:#2E3436;stroke-width:0.1;}
+	.st1{opacity:0.6;fill:none;stroke:#2E3436;}
 	.st2{opacity:0.6;}
-	.st3{fill:none;stroke:#2E3436;stroke-width:0.1;}
-	.st4{opacity:0.6;fill:#A40000;stroke:#2E3436;stroke-width:0.1;}
+	.st3{fill:none;stroke:#2E3436;}
+	.st4{opacity:0.6;fill:#A40000;stroke:#2E3436;}
 	.st5{font-family:'scientifica';}
-	.st6{font-size:0.5px;}
+	.st6{font-size:0.42px;}
 </style>
 <g id="graph0" transform="scale(0.03 0.03) rotate(0) translate(4 11094.81)">
 	<title>G</title>
-	<polygon class="st0" points="-8.4,-12.2 -8.4,-11099 12958.3,-11099 12958.3,-12.2 	"/>
+	<polygon class="st0" points="-7.1,-7.9 -7.1,-11094.8 12959.6,-11094.8 12959.6,-7.9 	"/>
 	<g id="edge1">
 		<title>0--1</title>
 		<path class="st1" d="M7511.7-3063.7c6.8,14.7,31.2,67.1,37.9,81.5"/>
