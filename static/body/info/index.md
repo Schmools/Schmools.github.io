@@ -1,4 +1,4 @@
-Hi, I'm Samuel Schuur a high school senior from New York City. I have
+Hi, I'm Samuel Schuur, I'm currently on a gap year working in Berkeley, CA. I have
 a mild obsession with pretty much everything with any relation to
 engineering, robotics, and CNCs. I fold origami. I also play the violin.
 
@@ -48,10 +48,11 @@ around from my old site. You can see that at this archived (I'm a strong believe
 
 --- 
 
-I attend Horace Mann School and am currently taking AP Calculus BCH,
+I currently attend the University of Chicago with an intended major in maths. 
+Previously I was at the Horace Mann School and took AP Calculus BCH,
 Organic Chemistry, Global Environmental History, an English Elective on
 Kafka, Software Engineering, Recording Studio Technology, and an
-independent study developing CNC tools to produce origami crease patterns.
+independent study developing CNC tools to produce origami crease patterns during my Senior Year.
 Additionally I am currently watching three OCW courses, "MIT 6.849:
 Geometric Folding Algorithms: Linkages, Origami, Polyhedra," "MIT 6.832:
 Underactuated Robotics," and "MIT 18.06" (as well as a bit of 18.065) as
