@@ -1,68 +1,110 @@
 
-		<!doctype html>
-		<html>
-		<head>
-		<meta charset="utf-8">
-		<title>Samuel Schuur</title>
+        <!doctype html>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <title>samuel schuur</title>
+        <link rel="stylesheet" href="https://use.typekit.net/cse0ubf.css">
+        <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='8' height='16' fill='%23C46A0D'/><rect x='8' width='8' height='16' fill='%23A39B90'/></svg>" type="image/svg+xml">
+        <style>
+            body {
+                font-family: 'maiola', serif;
+                font-size: 15px;
+                width: 500px;
+            }
+            h1 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 20px;
+                color: #C46A0D;
+            }
+            h2 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 17px;
+                color: #A39B90;
+            }
+            h1, h2 {
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            h2 a {
+                color: #C46A0D; /* Orange color for links */
+                text-decoration: none;
+            }
+            h2 a:hover {
+                color: #A39B90; /* Gray color on hover */
+            }
+            a {
+                color: #C46A0D; /* Orange color for all links */
+                text-decoration: none;
+            }
+            a:hover {
+                color: #A39B90; /* Gray color on hover */
+            }
+            h3 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 15px;
+                color: #A39B90;
+                border-bottom: 1px solid;
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+            .title {
+                flex-basis: 0;
+                flex-grow: 1;
+                padding: 5px;
+                font-style: italic;
+                text-align: right; /* Right-align the title column */
+            }
+            .content {
+                flex-basis: 0;
+                flex-grow: 3;
+                padding: 5px;
+                padding-left: 10px;
+                margin-left: 0;
+            }
+            .carousel {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
 
-		<link rel="stylesheet" href="https://use.typekit.net/cse0ubf.css">
+            .carousel img {
+                width: 100%;
+                display: block;
+            }
 
-		<style>
-			body {
-				font-family: 'maiola', serif;
-				font-size: 15px;
-				width: 500px;
-			}
+            .carousel-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                cursor: pointer;
+                z-index: 10;
+            }
 
-			h1 {
-				font-family: 'p22-underground', sans-serif;
-				font-size: 20px;
-				color: #C46A0D;
-			}
+            .carousel-overlay.left {
+                left: 0;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23C46A0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>') 12 12, w-resize;
+            }
 
-			h2 {
-				font-family: 'p22-underground', sans-serif;
-				font-size: 17px;
-				color: #A39B90;
-			}
-
-			h1, h2 {
-				margin-top: 2px;
-				margin-bottom:2px;
-			}
-
-			h3 {
-				font-family: 'p22-underground', sans-serif;
-				font-size: 15px;
-				color: #A39B90;
-				border-bottom: 1px solid;
-			}
-
-			.row {
-				display: flex;
-				justify-content: space-between;
-			}
-
-			.title {
-				flex-basis: 0;
-				flex-grow: 1;
-				padding: 5px;
-				font-style: italic;
-			}
-
-			.content {
-				flex-basis: 0;
-				flex-grow: 3;
-				padding: 5px;
-				padding-left: 10px;
-				margin-left: 0;
-			}
-
-		</style>
-
-		</head>
-		<body>
-		<h1>Samuel Schuur</h1><h2>schuursamuel at gmail dot com</h2><p>Hi, I'm Samuel Schuur, a student at the University of Chicago studying maths. Previously I've worked at the Center for Bits and Atoms at MIT, building tools for flexible computing and manufacturing workflows, as well as at Elmworks in Berkeley, CA developing wire plotting tools for building high frequency electromagnetic devices. I enjoy complex linkages and precision machine design.  In my free time I build furniture, and combat robots. I also play the violin.</p><h3>Education</h3><div class="row"><div class="title">2022 - expected 2026</div><div class="content"><b>University of Chicago</b> Mathematics, Architectural Studies</div></div><div class="row"><div class="title">2022</div><div class="content"><b>Gap year</b> audited MIT 6.004 Computational Structures, MIT 6.849 GFALOP (async lectures), MIT 22.061 Fusion Energy, MITERS keyholder</div></div><div class="row"><div class="title">2015 - 2021</div><div class="content"><b>Horace Mann School</b> High School Diploma</div></div><h3>Experience</h3><div class="row"><div class="title">January  2025</div><div class="content"><b>Suspension Lead</b> at <b>UChicago FSAE</b> <br></div></div><div class="row"><div class="title">June 2024</div><div class="content"><b>Participant</b> at <b>Design Assembly</b> <br>Worked to hand draft and build a trussed boat storage shed with a team of students in a remote location.</div></div><div class="row"><div class="title">2023</div><div class="content"><b>Student Researcher</b> at <b>Enrico Fermi Institute</b> <br>Frisch Group</div></div><div class="row"><div class="title">Summer 2023 - Summer 2019</div><div class="content"><b>the Center for Bits and Atoms</b><br><br><b>Summer 2023, Intern</b> Worked to develop instrumented CNC tools for the NIST Materials Genome Project, also helped test drive new modular motion planning systems by developing specialty tools (and interfaces for them) for precreasing origami in conjunction with the MIT museum.<br><br><b>2022, Machine Development Specialist</b> Built tools for flexible computing and manufacturing workflows in association with AFRL.<br><br><b>Summer 2020, Intern</b> Worked for the Machines that Make project, testing and assembling kits for the remote edition of 'How To Make (almost) Anything,' also developed custom extruder toolheads for said machines.<br><br><b>Summer 2019, Intern</b> Worked on the Machines that Make project; assembled and wired custom gantry based machines, developed a 3d printed tool changing system.<br><br></div></div><div class="row"><div class="title">Sep 2021 - Jan 2022</div><div class="content"><b>Intern</b> at <b>Elmworks</b> <br>Worked on custom wire plotting tools for building high frequency electromagnetic devices doing both mechanical and electrical design and testing!</div></div><h3>Skills</h3><div class="row"><div class="title">Programming</div><div class="content">Proficient in Python, Java, Javascript, C++, also some assembly and systems level C</div></div><div class="row"><div class="title">Manufacturing</div><div class="content">CAD and CAM as well as CNC and manual machining, including mills, lathes, waterjets, EDM's, and metal lasers</div></div>
-		</body>
-		</html>
-		
+            .carousel-overlay.right {
+                right: 0;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23C46A0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>') 12 12, e-resize;
+            }
+        </style>
+        </head>
+        <body>
+        
+        <h1>samuel schuur</h1>
+        <h2>schuursamuel at gmail dot com</h2>
+        <p>Hi, I'm samuel schuur, a student at the University of Chicago studying maths. Previously I've worked at the Center for Bits and Atoms at MIT, building tools for flexible computing and manufacturing workflows, as well as at Elmworks in Berkeley, CA developing wire plotting tools for building high frequency electromagnetic devices. I enjoy complex linkages and precision machine design. In my free time I build furniture, and combat robots. I also play the violin.</p>
+        <h2><a href="index.html">Resume</a>, <a href="portfolio.html">Portfolio</a></h2>
+        <h3>Education</h3><div class="row"><div class="title">2022 - expected 2026</div><div class="content"><b>University of Chicago</b> Mathematics, Architectural Studies</div></div><div class="row"><div class="title">2022</div><div class="content"><b>Gap year</b> audited MIT 6.004 Computational Structures, MIT 6.849 GFALOP (async lectures), MIT 22.061 Fusion Energy, MITERS keyholder</div></div><div class="row"><div class="title">2015 - 2021</div><div class="content"><b>Horace Mann School</b> High School Diploma</div></div><h3>Experience</h3><div class="row"><div class="title">January  2025</div><div class="content"><b>Suspension Lead</b> at <b>UChicago FSAE</b> <br></div></div><div class="row"><div class="title">June 2024</div><div class="content"><b>Participant</b> at <b>Design Assembly</b> <br>Worked to hand draft and build a trussed boat storage shed with a team of students in a remote location.</div></div><div class="row"><div class="title">2023</div><div class="content"><b>Student Researcher</b> at <b>Enrico Fermi Institute</b> <br>Frisch Group</div></div><div class="row"><div class="title">Summer 2023 - Summer 2019</div><div class="content"><b>the Center for Bits and Atoms</b><br><br><b>Summer 2023, Intern</b> Worked to develop instrumented CNC tools for the NIST Materials Genome Project, also helped test drive new modular motion planning systems by developing specialty tools (and interfaces for them) for precreasing origami in conjunction with the MIT museum.<br><br><b>2022, Machine Development Specialist</b> Built tools for flexible computing and manufacturing workflows in association with AFRL.<br><br><b>Summer 2020, Intern</b> Worked for the Machines that Make project, testing and assembling kits for the remote edition of 'How To Make (almost) Anything,' also developed custom extruder toolheads for said machines.<br><br><b>Summer 2019, Intern</b> Worked on the Machines that Make project; assembled and wired custom gantry based machines, developed a 3d printed tool changing system.<br><br></div></div><div class="row"><div class="title">Sep 2021 - Jan 2022</div><div class="content"><b>Intern</b> at <b>Elmworks</b> <br>Worked on custom wire plotting tools for building high frequency electromagnetic devices doing both mechanical and electrical design and testing!</div></div><h3>Skills</h3><div class="row"><div class="title">Programming</div><div class="content">Python, Java, Javascript, C++, systems level C, as well as some assembly (x86, riscV)</div></div><div class="row"><div class="title">Manufacturing</div><div class="content">Extrensive CAD and CAM experience, as well as CNC and manual machining, including mills, lathes, waterjets, EDM's, and metal lasers</div></div><div class="row"><div class="title">Electronics</div><div class="content">PCB design and layout in Altium and Kicad, SMD soldering and assembly</div></div><h3>Work</h3><div class="row"><div class="title">Integrating Materials and Manufacturing Innovation</div><div class="content">Online Measurement for Parameter Discovery in Fused Filament Fabrication</div></div>
+        <footer style="text-align: center; font-family: 'p22-underground', sans-serif; font-size: 12px; color: #A39B90; margin-top: 20px;">
+            s. schuur, 2025
+        </footer>
+        </body>
+        </html>
+        

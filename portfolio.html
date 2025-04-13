@@ -1,0 +1,218 @@
+
+        <!doctype html>
+        <html>
+        <head>
+        <meta charset="utf-8">
+        <title>samuel schuur</title>
+        <link rel="stylesheet" href="https://use.typekit.net/cse0ubf.css">
+        <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='8' height='16' fill='%23C46A0D'/><rect x='8' width='8' height='16' fill='%23A39B90'/></svg>" type="image/svg+xml">
+        <style>
+            body {
+                font-family: 'maiola', serif;
+                font-size: 15px;
+                width: 500px;
+            }
+            h1 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 20px;
+                color: #C46A0D;
+            }
+            h2 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 17px;
+                color: #A39B90;
+            }
+            h1, h2 {
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+            h2 a {
+                color: #C46A0D; /* Orange color for links */
+                text-decoration: none;
+            }
+            h2 a:hover {
+                color: #A39B90; /* Gray color on hover */
+            }
+            a {
+                color: #C46A0D; /* Orange color for all links */
+                text-decoration: none;
+            }
+            a:hover {
+                color: #A39B90; /* Gray color on hover */
+            }
+            h3 {
+                font-family: 'p22-underground', sans-serif;
+                font-size: 15px;
+                color: #A39B90;
+                border-bottom: 1px solid;
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+            .title {
+                flex-basis: 0;
+                flex-grow: 1;
+                padding: 5px;
+                font-style: italic;
+                text-align: right; /* Right-align the title column */
+            }
+            .content {
+                flex-basis: 0;
+                flex-grow: 3;
+                padding: 5px;
+                padding-left: 10px;
+                margin-left: 0;
+            }
+            .carousel {
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .carousel img {
+                width: 100%;
+                display: block;
+            }
+
+            .carousel-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            .carousel-overlay.left {
+                left: 0;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23C46A0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>') 12 12, w-resize;
+            }
+
+            .carousel-overlay.right {
+                right: 0;
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23C46A0D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>') 12 12, e-resize;
+            }
+        </style>
+        </head>
+        <body>
+        
+        <h1>samuel schuur</h1>
+        <h2>schuursamuel at gmail dot com</h2>
+        <p>Hi, I'm samuel schuur, a student at the University of Chicago studying maths. Previously I've worked at the Center for Bits and Atoms at MIT, building tools for flexible computing and manufacturing workflows, as well as at Elmworks in Berkeley, CA developing wire plotting tools for building high frequency electromagnetic devices. I enjoy complex linkages and precision machine design. In my free time I build furniture, and combat robots. I also play the violin.</p>
+        <h2><a href="index.html">Resume</a>, <a href="portfolio.html">Portfolio</a></h2>
+        <h3>Combat Robotics</h3>
+        <div class="carousel" id="combat_robotics" style="position: relative; width: 100%; overflow: hidden;">
+            <img src="images/robots/flycut.jpg" alt="Combat Robotics" class="carousel-image" style="width: 100%; display: block;">
+            <div class="carousel-overlay left" onclick="prevImage('combat_robotics')"></div>
+            <div class="carousel-overlay right" onclick="nextImage('combat_robotics')"></div>
+        </div>
+        <p>In my free time I enjoy building combat robots which I have competed with at NHRL and smaller events. Frankly, I enjoy the design and manufacturing of these robots more than actually competing with them (though of course that's also enjoyable) and as a result I think my bots have ended up with all sorts of interesting design features and weird compact packaging. I currently am working on a 3lb and a 30lb bot both with drive motors packaged coaxially with the wheels and shock isolated direct drive "hub motor" weapons. Both are abnormally compact for their respective weight classes. I also am working on a 12lb pneumatic flipper with a completely custom air system - but that got sidetracked by me going down a rabbit hole of high airflow valve design!</p>
+        <script>
+        window['combat_robotics_images'] = ['images/robots/flycut.jpg', 'images/robots/cruft.jpg', 'images/robots/flycut2.jpg', 'images/robots/cruftwep.jpg', 'images/robots/ncrawlerdrive.jpg', 'images/robots/frame.jpg', 'images/robots/flycut2wheels.jpg', 'images/robots/airtank.jpg'];
+        window['combat_robotics_index'] = 0;
+
+        function nextImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index + 1) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+
+        function prevImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index - 1 + images.length) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+        </script>
+        <h3>Origami Tools</h3>
+        <div class="carousel" id="origami_tools" style="position: relative; width: 100%; overflow: hidden;">
+            <img src="images/origami/origamachine.jpg" alt="Origami Tools" class="carousel-image" style="width: 100%; display: block;">
+            <div class="carousel-overlay left" onclick="prevImage('origami_tools')"></div>
+            <div class="carousel-overlay right" onclick="nextImage('origami_tools')"></div>
+        </div>
+        <p>As a personal offshoot from my work at the Center for Bits and Atoms stemming from my interest in computation geometry and the mathematics underlying origami I have worked on a series of CNC tools for precreasing complex origami patterns as a testing platform for new modular motion control systems. These machines have been shown at the MIT museum which is neat! This project also led me down a rabbit hole of paper metrology at one point which I devised some strange testing rigs, I also learned more then I could ever have wanted to about how SVG files work in writing their control software. You can see an old video of one of my precreasing machines here: <a href="https://www.youtube.com/watch?v=nkSGZQBx5p4">https://www.youtube.com/watch?v=nkSGZQBx5p4</a></p>
+        <script>
+        window['origami_tools_images'] = ['images/origami/origamachine.jpg', 'images/origami/origamachine2.jpg', 'images/origami/origamisoftware.jpg', 'images/origami/creasingtools.jpg'];
+        window['origami_tools_index'] = 0;
+
+        function nextImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index + 1) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+
+        function prevImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index - 1 + images.length) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+        </script>
+        <h3>Furniture</h3>
+        <div class="carousel" id="furniture" style="position: relative; width: 100%; overflow: hidden;">
+            <img src="images/furniture/desks.jpg" alt="Furniture" class="carousel-image" style="width: 100%; display: block;">
+            <div class="carousel-overlay left" onclick="prevImage('furniture')"></div>
+            <div class="carousel-overlay right" onclick="nextImage('furniture')"></div>
+        </div>
+        <p>In my free time I also enjoy designing and building furniture - I have designed a couple desks generated from parametric CAD files and cut out of flat sheets of plywood. I've also built a small adjustable climbing wall for my living room! I'm currently working on a plywood and folded sheet metal bench for my room.</p>
+        <script>
+        window['furniture_images'] = ['images/furniture/desks.jpg', 'images/furniture/computerdesk.jpg', 'images/furniture/climbingwall.jpg'];
+        window['furniture_index'] = 0;
+
+        function nextImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index + 1) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+
+        function prevImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index - 1 + images.length) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+        </script>
+        <h3>Misc</h3>
+        <div class="carousel" id="misc" style="position: relative; width: 100%; overflow: hidden;">
+            <img src="images/misc/pen.jpg" alt="Misc" class="carousel-image" style="width: 100%; display: block;">
+            <div class="carousel-overlay left" onclick="prevImage('misc')"></div>
+            <div class="carousel-overlay right" onclick="nextImage('misc')"></div>
+        </div>
+        <p>In general I just like designing and making things with my hands! I've worked on all sorts of other random projects:  machined pens, bike lights with fun custom fresnel lenses, clocks, strange belt reductions, cast wheels, to just hand polishing bike parts, etc.</p>
+        <script>
+        window['misc_images'] = ['images/misc/pen.jpg', 'images/misc/light.jpg', 'images/misc/machining.jpg', 'images/misc/clock.jpg', 'images/misc/belts.jpg', 'images/misc/wheels.jpg'];
+        window['misc_index'] = 0;
+
+        function nextImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index + 1) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+
+        function prevImage(carouselId) {
+            const images = window[carouselId + '_images'];
+            let index = window[carouselId + '_index'];
+            index = (index - 1 + images.length) % images.length;
+            window[carouselId + '_index'] = index;
+            document.querySelector('#' + carouselId + ' .carousel-image').src = images[index];
+        }
+        </script>
+        
+        <footer style="text-align: center; font-family: 'p22-underground', sans-serif; font-size: 12px; color: #A39B90; margin-top: 20px;">
+            s. schuur, 2025
+        </footer>
+        </body>
+        </html>
+        
